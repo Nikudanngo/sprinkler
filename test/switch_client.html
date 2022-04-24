@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-latest.min.js">
+    </script>
+    <script>
+        $(function () {
+            var ws = new WebSocket("ws://ラズパイのIP:5555/");
+
+            $('#btn').on('click', function () {
+                if($('#btn').text() == "OFF") {
+                    $('#btn').text("ON")
+                    ws.send('GREEN_on');
+                } else {
+                    $('#btn').text("OFF")
+                    ws.send('GREEN_off');
+                }
+            });
+
+
+        })
+    </script>
+    <style>
+        #btn{ 
+            width: 500px;
+            height:200px;
+            font-size:100px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">OFF</button>
+</body>
+
+</html>
