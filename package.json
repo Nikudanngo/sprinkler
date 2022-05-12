@@ -1,0 +1,25 @@
+{
+  "name": "sprinkler",
+  "version": "1.0.0",
+  "description": "詳しい使い方は以下のqiitaをご覧ください。",
+  "main": "ontime.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikudanngo/sprinkler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikudanngo/sprinkler/issues"
+  },
+  "homepage": "https://github.com/Nikudanngo/sprinkler#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
